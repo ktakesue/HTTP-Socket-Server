@@ -8,28 +8,35 @@ const server = net.createServer(socket => {
     const reqDataArr = data.toString().split("\n");
     const reqLine = reqDataArr[0];
     const reqUrl = reqLine.split(" ")[1];
+    const date = new Date().toUTCString();
     console.log("ReqData", reqDataArr);
     console.log("ReqUrl", reqUrl);
 
     if (reqUrl === "/") {
-      socket.write(`HTTP/1.1 200 OK\n\n${index}`);
+      socket.write(`HTTP/1.1 200 OK\nServer: Kayla\n${date}\n\n${index}`);
       socket.end();
     } else if (reqUrl === "/index.html") {
-      socket.write(`HTTP/1.1 200 OK\n\n${index}`);
+      socket.write(`HTTP/1.1 200 OK\nServer: Kayla\n${date}\n\n${index}`);
       socket.end();
     } else if (reqUrl === "/css/styles.css") {
-      socket.write(`HTTP/1.1 200 OK\n\n${style}`);
+      socket.write(`HTTP/1.1 200 OK\nServer: Kayla\n${date}\n\n${style}`);
       socket.end();
     } else if (reqUrl === "/hydrogen.html") {
-      socket.write(`HTTP/1.1 200 OK\n\n${hydrogen}`);
+      socket.write(`HTTP/1.1 200 OK\nServer: Kayla\n${date}\n\n${hydrogen}`);
       socket.end();
     } else if (reqUrl === "/helium.html") {
-      socket.write(`HTTP/1.1  200 OK\n\n${helium}`);
+      socket.write(`HTTP/1.1  200 OK\nServer: Kayla\n${date}\n\n${helium}`);
       socket.end();
-    } else if (reqUrl === "/404.html") {
-      socket.write(`HTTP/1.1 200 OK\n\n${error}`);
+    } else {
+      socket.write(
+        `HTTP/1.1 404 NOT FOUND\nServer: Kayla\n${date}\n\n${error}`
+      );
       socket.end();
     }
+  });
+
+  socket.on("end", () => {
+    console.log("client is Gonezo");
   });
 });
 
