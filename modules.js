@@ -1,0 +1,178 @@
+// const error =
+//   '<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <title>Element not found!</title> <link rel="stylesheet" href="/css/styles.css"></head><body><h1>404</h1><h2>Element not found!</h2><p><a href="/">back</a></p></body></html>';
+
+let error = "<!DOCTYPE html>";
+error += '<html lang="en">';
+error += "<head>";
+error += '  <meta charset="UTF-8">';
+error += "  <title>Element not found!</title>";
+error += '  <link rel="stylesheet" href="/css/styles.css">';
+error += "</head>";
+error += "<body>";
+error += "  <h1>404</h1>";
+error += "  <h2>Element not found!</h2>";
+error += "  <p>";
+error += '    <a href="/">back</a>';
+error += "  </p>";
+error += "</body>";
+error += "</html>";
+
+let helium = "<!DOCTYPE html>";
+helium += '<html lang="en">';
+helium += "<head>";
+helium += '  <meta charset="UTF-8">';
+helium += "  <title>The Elements - Helium</title>";
+helium += '  <link rel="stylesheet" href="/css/styles.css">';
+helium += "</head>";
+helium += "<body>";
+helium += "  <h1>Helium</h1>";
+helium += "  <h2>H</h2>";
+helium += "  <h3>Atomic number 2</h3>";
+helium +=
+  "  <p>Helium is a chemical element with symbol He and atomic number 2. It is a colorless, odorless, tasteless, non-toxic, inert, monatomic gas that heads the noble gas group in the periodic table. Its boiling and melting points are the lowest among all the elements and it exists only as a gas except in extremely cold conditions.</p>";
+helium += '  <p><a href="/">back</a></p>';
+helium += "</body>";
+
+let hydrogen = "<!DOCTYPE html>";
+hydrogen += '<html lang="en">';
+hydrogen += "<head>";
+hydrogen += '  <meta charset="UTF-8">';
+hydrogen += "  <title>The Elements - Hydrogen</title>";
+hydrogen += '  <link rel="stylesheet" href="/css/styles.css">';
+hydrogen += "</head>";
+hydrogen += "<body>";
+hydrogen += "  <h1>Hydrogen</h1>";
+hydrogen += "  <h2>H</h2>";
+hydrogen += "  <h3>Atomic number 1</h3>";
+hydrogen +=
+  "  <p>Hydrogen is a chemical element with chemical symbol H and atomic number 1. With an atomic weight of 1.00794 u, hydrogen is the lightest element on the periodic table. Its monatomic form (H) is the most abundant chemical substance in the universe, constituting roughly 75% of all baryonic mass. Non-remnant stars are mainly composed of hydrogen in its plasma state. The most common isotope of hydrogen, termed protium (name rarely used, symbol 1H), has a single proton and zero neutrons.</p>";
+hydrogen += '  <p><a href="/">back</a></p>';
+hydrogen += "</body>";
+
+let index = "<!DOCTYPE html>";
+index += '<html lang="en">';
+index += "<head>";
+index += '  <meta charset="UTF-8">';
+index += "  <title>The Elements</title>";
+index += '  <link rel="stylesheet" href="/css/styles.css">';
+index += "</head>";
+index += "<body>";
+index += "  <h1>The Elements</h1>";
+index += "  <h2>These are all the known elements.</h2>";
+index += "  <h3>These are 2</h3>";
+index += "  <ol>";
+index += "    <li>";
+index += '      <a href="/hydrogen.html">Hydrogen</a>';
+index += "    </li>";
+index += "    <li>";
+index += '      <a href="/helium.html">Helium</a>';
+index += "    </li>";
+index += "  </ol>";
+index += "</body>";
+index += "</html>";
+
+let style =
+  "@import url(http://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab);";
+style += "/* http://meyerweb.com/eric/tools/css/reset/ ";
+style += "   v2.0 | 20110126";
+style += "   License: none (public domain)";
+style += "*/";
+style += "html, body, div, span, applet, object, iframe,";
+style += "h1, h2, h3, h4, h5, h6, p, blockquote, pre,";
+style += "a, abbr, acronym, address, big, cite, code,";
+style += "del, dfn, em, img, ins, kbd, q, s, samp,";
+style += "small, strike, strong, sub, sup, tt, var,";
+style += "b, u, i, center,";
+style += "dl, dt, dd, ol, ul, li,";
+style += "fieldset, form, label, legend,";
+style += "table, caption, tbody, tfoot, thead, tr, th, td,";
+style += "article, aside, canvas, details, embed, ";
+style += "figure, figcaption, footer, header, hgroup, ";
+style += "menu, nav, output, ruby, section, summary,";
+style += "time, mark, audio, video {";
+style += "  margin: 0;";
+style += "  padding: 0;";
+style += "  border: 0;";
+style += "  font-size: 100%;";
+style += "  font: inherit;";
+style += "  vertical-align: baseline;";
+style += "}";
+style += "/* HTML5 display-role reset for older browsers */";
+style += "article, aside, details, figcaption, figure, ";
+style += "footer, header, hgroup, menu, nav, section {";
+style += "  display: block;";
+style += "}";
+style += "body {";
+style += "  line-height: 1;";
+style += "}";
+style += "ol, ul {";
+style += "  list-style: none;";
+style += "}";
+style += "blockquote, q {";
+style += "  quotes: none;";
+style += "}";
+style += "blockquote:before, blockquote:after,";
+style += "q:before, q:after {";
+style += "  content: '';";
+style += "  content: none;";
+style += "}";
+style += "table {";
+style += "  border-collapse: collapse;";
+style += "  border-spacing: 0;";
+style += "}";
+style += "/* STYLES */";
+style += "body{";
+style += "  background-color: #3F3F4E;";
+style += "  font-family: 'Open Sans', 'Helvetica', sans-serif;";
+style += "  padding: 50px;";
+style += "  max-width: 500px;";
+style += "  margin: auto;";
+style += "}";
+style += "h1, h2, h3, h4, h5, h6{";
+style += "  font-family: 'Roboto Slab', 'Helvetica', sans-serif;";
+style += "  color: #B4D12B;";
+style += "  margin-bottom: 20px;";
+style += "}";
+style += "h1{";
+style += "  font-size: 50px;";
+style += "  line-height: 55px;";
+style += "}";
+style += "h2{";
+style += "  font-size: 30px;";
+style += "  line-height: 38px;";
+style += "  color: #879642;";
+style += "}";
+style += "h3{";
+style += "  font-size: 25px;";
+style += "  line-height: 30px;";
+style += "  color: #F2FFC1;";
+style += "}";
+style += "p{";
+style += "  color: #C6C5AC;";
+style += "  font-family: 'Open Sans', 'Helvetica', sans-serif;";
+style += "  line-height: 26px;";
+style += "  font-size: 15px;";
+style += "}";
+style += "ul{";
+style += "}";
+style += "li{";
+style += "  line-height: 26px;";
+style += "  font-size: 15px;";
+style += "}";
+style += "a{";
+style += "  color: #F2FFC1;";
+style += "  text-decoration: none;";
+style += "  border-bottom: 1px dashed #E3DE8B;";
+style += "}";
+style += "a:hover{";
+style += "  color: #C6C5AC;";
+style += "  border-bottom: 1px dashed #C6C5AC;";
+style += "}";
+
+module.exports = {
+  error,
+  helium,
+  hydrogen,
+  index,
+  style
+};
